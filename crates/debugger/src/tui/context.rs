@@ -302,7 +302,8 @@ impl TUIContext<'_> {
         }
     }
 
-    /// Moves to the next debug step, or to the first step of the next call if at the last step.
+    /// Moves to the previous debug step, or to the last step of the previous call if at the first
+    /// step.
     ///
     /// If already at the last step of the last call, does nothing.
     fn step(&mut self) {
